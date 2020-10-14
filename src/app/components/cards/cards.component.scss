@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    flex-direction: column;
+
+    height: 320px;
+    width: 220px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    transition: all .3s;
+    
+    &__image {
+        height: 240px;
+        cursor: pointer;
+    }
+
+    &__id {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+
+    &__name {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    &:hover {
+        transform: translateY(-15px) scale(1.03);
+    }
+}
